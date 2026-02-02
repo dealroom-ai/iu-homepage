@@ -67,17 +67,35 @@
     }
   }
 
-  // Render all categories
+  // Render all categories with masonry layout
   function renderCategories() {
-    const fragment = document.createDocumentFragment();
+    const numColumns = window.innerWidth > 900 ? 3 : 1;
 
+    // Create column containers
+    const columns = [];
+    for (let i = 0; i < numColumns; i++) {
+      const col = document.createElement("div");
+      col.className = "masonry-column";
+      columns.push({ element: col, height: 0 });
+    }
+
+    // Estimate card heights based on item count and distribute to shortest column
     linksData.categories.forEach((category) => {
       const card = createCategoryCard(category);
-      fragment.appendChild(card);
+
+      // Find shortest column
+      const shortestCol = columns.reduce((min, col) =>
+        col.height < min.height ? col : min,
+      );
+
+      shortestCol.element.appendChild(card);
+      // Estimate height: header (60px) + items (50px each for simple, 90px for advanced)
+      const itemHeight = category.items.some((i) => i.advanced) ? 70 : 50;
+      shortestCol.height += 60 + category.items.length * itemHeight;
     });
 
     elements.categoriesGrid.innerHTML = "";
-    elements.categoriesGrid.appendChild(fragment);
+    columns.forEach((col) => elements.categoriesGrid.appendChild(col.element));
   }
 
   // Create a category card element
