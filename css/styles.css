@@ -619,45 +619,26 @@ body.advanced-view .link-advanced {
   overflow: hidden;
 }
 
-.help-summary {
+.help-header {
   padding: var(--space-5) var(--space-6);
   font-weight: 500;
   color: var(--color-text-secondary);
-  cursor: pointer;
-  list-style: none;
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  transition: all var(--transition-fast);
+  border-bottom: 1px solid var(--color-border);
 }
 
-.help-summary::-webkit-details-marker {
-  display: none;
-}
-
-.help-summary:hover {
-  color: var(--color-text);
-  background: var(--color-bg-hover);
-}
-
-.help-summary svg {
+.help-header svg {
   flex-shrink: 0;
 }
 
-.help-summary span {
+.help-header span {
   flex: 1;
 }
 
-.help-chevron {
-  transition: transform var(--transition-normal);
-}
-
-details[open] .help-chevron {
-  transform: rotate(180deg);
-}
-
 .help-content {
-  padding: 0 var(--space-6) var(--space-6);
+  padding: var(--space-6);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-6);
@@ -815,6 +796,22 @@ details[open] .help-chevron {
   }
 }
 
+/* Focus styles for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.toggle-btn:focus-visible {
+  outline-offset: 4px;
+}
+
+.link-name:focus-visible,
+.advanced-link:focus-visible,
+.sub-page-link:focus-visible {
+  outline-offset: -2px;
+}
+
 /* Selection styling */
 ::selection {
   background: var(--color-primary);
@@ -838,4 +835,27 @@ details[open] .help-chevron {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-text-muted);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .bg-glow {
+    animation: none;
+  }
+
+  .logo-icon {
+    animation: none;
+  }
 }

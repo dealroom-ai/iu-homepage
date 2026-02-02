@@ -30,6 +30,7 @@
     const isAdvanced = localStorage.getItem(VIEW_STORAGE_KEY) === "advanced";
     if (isAdvanced) {
       document.body.classList.add("advanced-view");
+      elements.viewToggle.setAttribute("aria-pressed", "true");
     }
   }
 
@@ -41,12 +42,24 @@
   // Toggle view mode
   function toggleView() {
     const isAdvanced = document.body.classList.toggle("advanced-view");
+    elements.viewToggle.setAttribute("aria-pressed", isAdvanced);
     saveViewPreference(isAdvanced);
   }
 
   // Setup event listeners
   function setupEventListeners() {
     elements.viewToggle.addEventListener("click", toggleView);
+
+    // Debounced resize handler for masonry layout
+    let resizeTimeout;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        if (linksData) {
+          renderCategories();
+        }
+      }, 150);
+    });
   }
 
   // Load links from JSON
