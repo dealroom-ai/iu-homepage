@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IU Hub - Intelligence Unit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Animated background -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <header class="header">
+      <div class="header-content">
+        <div class="logo-group">
+          <div class="logo-icon">
+            <svg
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="2"
+                y="2"
+                width="28"
+                height="28"
+                rx="6"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <circle
+                cx="16"
+                cy="16"
+                r="6"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M16 4V10M16 22V28M4 16H10M22 16H28"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">IU Hub</span>
+            <span class="logo-subtitle">Intelligence Unit</span>
+          </div>
+        </div>
+        <div class="view-toggle">
+          <button
+            class="toggle-btn"
+            id="viewToggle"
+            aria-label="Toggle view mode"
+          >
+            <span class="toggle-option" data-view="simple">
+              <svg
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                width="14"
+                height="14"
+              >
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Simple
+            </span>
+            <span class="toggle-option" data-view="advanced">
+              <svg
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                width="14"
+                height="14"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Advanced
+            </span>
+            <span class="toggle-indicator"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              <span class="hero-title-line">Your central hub for</span>
+              <span class="hero-title-accent">Dealroom Intelligence</span>
+            </h1>
+            <p class="hero-description">
+              Dashboards, micro-apps, ecosystems, and tools — all in one place.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div id="categoriesGrid" class="categories-grid">
+          <!-- Categories loaded dynamically -->
+        </div>
+
+        <div class="loading" id="loading">
+          <div class="loading-spinner"></div>
+          <p>Loading links...</p>
+        </div>
+
+        <div class="error" id="error" hidden>
+          <p>Failed to load links. Please refresh the page.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="contact-section">
+          <p class="contact-label">Want to add a link?</p>
+          <div class="contact-options">
+            <span class="contact-item"
+              >Message <strong>Felix Ullmer</strong></span
+            >
+            <span class="contact-divider">or</span>
+            <span class="contact-item"
+              >Post in <strong>#team-intelligence-unit</strong></span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <details class="help-section">
+          <summary class="help-summary">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+              <path
+                fill-rule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span>How to Edit Links</span>
+            <svg
+              class="help-chevron"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              width="16"
+              height="16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </summary>
+          <div class="help-content">
+            <div class="help-steps">
+              <div class="help-step">
+                <span class="help-step-number">1</span>
+                <div class="help-step-content">
+                  <strong>Open the JSON file on GitHub</strong>
+                  <a href="#" id="jsonFileLink" target="_blank" rel="noopener"
+                    >Open links.json →</a
+                  >
+                </div>
+              </div>
+              <div class="help-step">
+                <span class="help-step-number">2</span>
+                <div class="help-step-content">
+                  <strong>Click the pencil icon</strong>
+                  <span>Edit button in the top-right corner</span>
+                </div>
+              </div>
+              <div class="help-step">
+                <span class="help-step-number">3</span>
+                <div class="help-step-content">
+                  <strong>Save your changes</strong>
+                  <span>Changes go live automatically!</span>
+                </div>
+              </div>
+            </div>
+            <div class="help-example">
+              <span class="help-example-label">Example entry</span>
+              <pre><code>{
+  "name": "My Dashboard",
+  "url": "https://example.com/dashboard"
+}</code></pre>
+            </div>
+          </div>
+        </details>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p class="last-updated" id="lastUpdated"></p>
+        <a href="#" id="legacyLink" class="legacy-link"></a>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+{
+  "lastUpdated": "2026-02-02",
+  "categories": [
+    {
+      "id": "looker-dashboards",
+      "name": "Looker Dashboards",
+      "icon": "📊",
+      "items": [
+        {
+          "name": "Top Investors",
+          "url": "https://lookerstudio.google.com/u/0/reporting/0cbcac88-1804-4f9d-8f16-84e4a8b1145e/page/p_cfj8qrw7xc?s=gzTVFYRJz3U"
+        },
+        {
+          "name": "Unique Number of Investors",
+          "url": "https://lookerstudio.google.com/u/0/reporting/b0040b12-c5b9-46df-9321-c53ca396755e/page/p_t9zec6ntmd?s=v7tEDS7i_fM"
+        },
+        {
+          "name": "Round Sizes",
+          "url": "https://lookerstudio.google.com/u/0/reporting/04847279-ef3a-4c8d-a359-e8b00dd80776/page/p_prijjv73ad?s=ur3Bp66o0RU"
+        },
+        {
+          "name": "Top City Regions",
+          "url": "https://lookerstudio.google.com/u/0/reporting/bb01aad5-63c7-431b-9d02-042299481235/page/ErzVD?s=vuRPVh05KH8"
+        },
+        {
+          "name": "VC Investment Comparison",
+          "url": "https://lookerstudio.google.com/u/0/reporting/fe7eb551-fa5a-4cbe-ada6-05ea50b157d9/page/p_48qfghk30c?s=lx6Pl6uyObA"
+        },
+        {
+          "name": "Conversion Funnel",
+          "url": "https://lookerstudio.google.com/u/0/reporting/e11d6e0c-dc7a-4aa5-a3ae-cb5d93a2dcae/page/p_o2ti2xrjed?s=oXrhWuKjTDw"
+        },
+        {
+          "name": "EV by Year",
+          "url": "https://lookerstudio.google.com/u/0/reporting/bd2d71d3-b563-41de-9121-de25cc9ccca0/page/MxNFF"
+        },
+        {
+          "name": "Round Valuations",
+          "url": "https://lookerstudio.google.com/u/0/reporting/203eeda1-e7ba-4f87-8627-70172ee07965/page/p_prijjv73ad?s=oqMfGIzU01g"
+        }
+      ]
+    },
+    {
+      "id": "micro-apps-internal",
+      "name": "Micro-apps (Internal)",
+      "icon": "🔧",
+      "items": [
+        {
+          "name": "Sectors Table",
+          "url": "https://app.dealroom.co/sectors",
+          "advanced": {
+            "repo": "https://github.com/dealroom-ai/venture-sector-lens",
+            "datasheet": "https://docs.google.com/spreadsheets/d/1LutC2VxesrS-5Ym8VydVvgLh8stH66vY_Bor1g7lY2A/edit?gid=109336614#gid=109336614",
+            "cachingRepo": "https://github.com/dealroom-caching/sectors-table-data"
+          }
+        },
+        {
+          "name": "Location Table",
+          "url": "https://app.dealroom.co/locations",
+          "advanced": {
+            "repo": "https://github.com/dealroom-ai/locations-table-v8-01",
+            "datasheet": "https://docs.google.com/spreadsheets/d/1Ewhi3YCL-dUWZ3YrHpsmWt4goza-5c1FbDyfDcw26lw/edit?gid=880351439#gid=880351439",
+            "cachingRepo": "https://github.com/dealroom-caching/locations-table-data"
+          }
+        },
+        {
+          "name": "Quarterly Reports",
+          "url": "https://app.dealroom.co/quarterly-reports",
+          "advanced": {
+            "repo": "https://github.com/dealroom-ai/quarterly-reporting-project",
+            "datasheet": "https://docs.google.com/spreadsheets/d/120IXe10QWLsOjMwK1beu2pY-jlSLQjaO-kfc10q9J04/edit?gid=1426194263#gid=1426194263",
+            "cachingRepo": "https://github.com/dealroom-caching/quarterly-reporting-cache"
+          }
+        },
+        {
+          "name": "Funnel",
+          "url": "https://app.dealroom.co/funnel",
+          "advanced": {
+            "repo": "https://github.com/dealroom-ai/startup-funnel-yoram-v2",
+            "datasheet": "https://docs.google.com/spreadsheets/d/14Z3M53yZB8Fh0bhMp2SaPvdzeFulMi_N6HWglSFW3yY/edit?gid=887494330#gid=887494330",
+            "cachingRepo": "https://github.com/dealroom-caching/funnel-data"
+          }
+        },
+        {
+          "name": "Deal Multiples",
+          "url": "https://app.dealroom.co/deal-multiples",
+          "advanced": {
+            "repo": "https://github.com/dealroom-ai/sheet-table-duo-view",
+            "datasheet": "https://docs.google.com/spreadsheets/d/10qd9IhTdrq_vZzGFDkwxcio8hH48LZu9npaWespygTs/edit?gid=1810459982#gid=1810459982",
+            "cachingRepo": "https://github.com/dealroom-caching/deal-multiples"
+          }
+        },
+        {
+          "name": "Unicorns & Thoroughbreds",
+          "url": "https://app.dealroom.co/unicorns-thoroughbreds",
+          "advanced": {
+            "repo": "https://github.com/dealroom-ai/thoroughbreds",
+            "datasheet": "https://docs.google.com/spreadsheets/d/1ArkMsWfTgzdSJrZlkXsXSpmVI4GPIhurEvHzCwHVgD0/edit?gid=938107091#gid=938107091",
+            "cachingRepo": "https://github.com/dealroom-caching/unicorns-data"
+          }
+        },
+        {
+          "name": "LP Ranking",
+          "url": "https://app.dealroom.co/lp-ranking",
+          "advanced": {
+            "repo": "https://github.com/dealroom-ai/lp-ranking-new-version",
+            "datasheet": "https://docs.google.com/spreadsheets/d/1jUOqG0PaCYFsqNd1Sq2etqJ0prbZgPIoJVuwWh192IQ/edit?gid=0#gid=0",
+            "cachingRepo": "https://github.com/dealroom-caching/lp-data"
+          }
+        },
+        {
+          "name": "Power Law",
+          "url": "https://app.dealroom.co/power-law-ranking",
+          "advanced": {
+            "repo": "https://github.com/dealroom-ai/power-law-ranking-v22-yoram",
+            "datasheet": "https://docs.google.com/spreadsheets/d/1I1SSM6K2FVho8nmbOPa7YpRaaGeeBVnwbDQt79721Og/edit?gid=1220459780#gid=1220459780",
+            "cachingRepo": "https://github.com/dealroom-caching/power-law-ranking-data"
+          }
+        },
+        {
+          "name": "Dealroom User Stats",
+          "url": "https://dealroom-usage-statistics.lovable.app/"
+        }
+      ]
+    },
+    {
+      "id": "micro-apps-external",
+      "name": "Micro-apps (External)",
+      "icon": "🌐",
+      "items": [
+        {
+          "name": "UK Deep Tech 2025",
+          "url": "https://uk-deep-tech-report-2025-raeng.dealroom.co/"
+        },
+        {
+          "name": "WIPO Prototype",
+          "url": "https://wipo-gii-2026-science-based-innovation.dealroom.co/"
+        }
+      ]
+    },
+    {
+      "id": "ecosystems",
+      "name": "Ecosystems",
+      "icon": "🗺️",
+      "items": [
+        {
+          "name": "Upstate New York - Homepage",
+          "url": "https://investny.org/ecosystem/dashboard",
+          "advanced": {
+            "repo": "https://github.com/dealroom-ai/ny-state-landing-page",
+            "datasheet": "https://docs.google.com/spreadsheets/d/1LtLWrFwADBtmm5CkA1NeYr1G4mJgVdFWT6a9eq1TCQw/edit?gid=0#gid=0",
+            "cachingRepo": "https://github.com/dealroom-caching/ny-state-landing-page-data"
+          }
+        },
+        {
+          "name": "Upstate New York - Report",
+          "url": "https://investny.org/ecosystem/about-new-york",
+          "advanced": {
+            "repo": "https://github.com/dealroom-ai/upstate-new-york-report",
+            "datasheet": "https://docs.google.com/spreadsheets/d/1HykT7fz6rMp2vMkz3Y_qKbB_MhioszCKNS0Ekl62PMk/edit?gid=0#gid=0",
+            "cachingRepo": "https://github.com/dealroom-caching/upstate-new-york-report-data"
+          }
+        }
+      ]
+    },
+    {
+      "id": "report-analytics",
+      "name": "Report Analytics",
+      "icon": "📈",
+      "items": [
+        {
+          "name": "Report Analytics (Hubspot)",
+          "url": "https://app.hubspot.com/submissions/6645497/form/465bd4f7-dd0e-4aa1-bf9b-ac5a6ba97bf4/performance?redirectUrl=https%3A%2F%2Fapp.hubspot.com%2Fforms%2F6645497"
+        }
+      ]
+    },
+    {
+      "id": "helpful-sheets",
+      "name": "Helpful Sheets",
+      "icon": "📋",
+      "items": [
+        {
+          "name": "Global Tech Ecosystem Index Model (2026 WIP)",
+          "url": "https://docs.google.com/spreadsheets/d/1kBewZR2CODbwuvvHRiz2Lb-8h-21BqPk5EhPigudMFY/edit?gid=1682233537#gid=1682233537"
+        },
+        {
+          "name": "All Platform Location (from BQ)",
+          "url": "https://docs.google.com/spreadsheets/d/1WIeCUhFHt36UxCPzCl1QnzZxR5KttTTwvzOmJKQugpg/edit?gid=1471389329#gid=1471389329"
+        }
+      ]
+    }
+  ],
+  "legacyPage": {
+    "name": "Legacy Page",
+    "url": "https://lookerstudio.google.com/u/0/reporting/b9969859-7b06-4548-8bf8-85eb95754b7c/page/7LH0C"
+  },
+  "repoUrl": "https://github.com/dealroom-ai/iu-homepage",
+  "contactEmail": "felix.ullmer@dealroom.co"
+}
